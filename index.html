@@ -9,9 +9,12 @@
 </head>
 
 <body>
-    <div class="test"></div>
+
     <div class="box">
         <div class="body">
+            <div class="header__right-block">
+                <button data-modal class="btn btn_white">Донаты</button>
+            </div>
             <div class="promotion__timer">
                 <div class="timer">
                     <div class="timer__block">
@@ -35,9 +38,23 @@
             </div>
         </div>
 
+    </div>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Введите данные вашей карты</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер карты" name="card" type="card" class="modal__input">
+                    <input required placeholder="Сумма" name="name" type="number" class="modal__input">
+                    <button class="btn btn_white btn_min">Пожертвовать</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
