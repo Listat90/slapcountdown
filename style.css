@@ -36,7 +36,11 @@
     color:#942637;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+<<<<<<< HEAD
     margin: 10px auto;
+=======
+    margin: 10px;
+>>>>>>> 6b1bc1f157800bf93f4e10892ed79cf043f07988
 }
 .promotion__timer .timer__block span{
     display:block;
