@@ -5,44 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slapcountdown</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-<<<<<<< HEAD
+    <div class="body-style">
 
-=======
-    
->>>>>>> 6b1bc1f157800bf93f4e10892ed79cf043f07988
-    <div class="box">
-        <div class="body">
+        <header>
+
+
             <div class="header__right-block">
-                <button data-modal class="btn btn_white">Донаты</button>
+                <button data-modal class="btn btn_white">Связаться с нами</button>
+                <button data-сalc class="btn btn_white">Сonvector</button>
+                <button data-tetris class="btn btn_white">Tetris</button>
+                <button data-dino class="btn btn_white">Dinogame</button>
+
             </div>
-            <div class="promotion__timer">
-                <div class="timer">
-                    <div class="timer__block">
-                        <span id="days">12</span>
-                            <div class="timer_text">DAYS</div>
-                    </div>
-                    <div class="timer__block">
-                        <span id="hours">20</span>
-                            <div class="timer_text">HOURS</div>
-                    </div>
-                    <div class="timer__block">
-                        <span id="minutes">56</span>
-                            <div class="timer_text">MINUTES</div>
-                    </div>
-                    <div class="timer__block">
-                        <span id="seconds">20</span>
-                            <div class="timer_text">SECONDS</div>
-                    </div>
+        </header>
+
+
+
+
+
+        <div class="promotion__timer">
+            <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    <div class="timer_text">DAYS</div>
                 </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                    <div class="timer_text">HOURS</div>
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                    <div class="timer_text">MINUTES</div>
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    <div class="timer_text">SECONDS</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <h2 class="title">Приложения</h2>
+
+        <div class="menu__field">
+            <div class="container">
 
             </div>
         </div>
-
     </div>
+
+
+
+    <div class='calc'>
+        <div class="calc__dialog">
+            <div class="calc__content">
+                <div data-closeCalc class="calc__close">&times;</div>
+                <label for="rub">RUB</label>
+                <input id="rub" type="text">
+                <br>
+                <label for="usd">USD</label>
+                <input id="usd" type="text">
+                <br>
+                <label for="eur">EUR</label>
+                <input id="eur" type="text">
+                <br>
+                <label for="gbp">GBP</label>
+                <input id="gbp" type="text">
+                <br>
+                <label for="sheep">SHEEP</label>
+                <input id="sheep" type="text">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
@@ -51,14 +99,129 @@
                     <div class="modal__title">Введите данные вашей карты</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
                     <input required placeholder="Ваш номер карты" name="card" type="card" class="modal__input">
-                    <input required placeholder="Сумма" name="name" type="number" class="modal__input">
+                    <input required placeholder="Сумма" name="value" type="number" class="modal__input">
                     <button class="btn btn_white btn_min">Пожертвовать</button>
+                    <!-- <script src="js/scriptModal.js"></script> -->
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+<!-- // dino -->
+    <div class="dino-box">
+        <div class="dino__modal">
+            <div class="box__content">
+                <div data-closeGame class="game__close">&times;</div>
+                <div class="box">
+                    <di class="game">
+                        <div id="dino"></div>
+                        <div id="cactus"></div>
+                    </di>
+                </div>
+
+            </div>
+        </div>
+
+       
+
+    </div>
+
+<!-- //tetris -->
+
+
+
+    <div class="tetris-box">
+        <div class="tetris__modal">
+            <div data-closeTetris class="close__tetris"></div>
+
+        </div>
+    </div>
+
+  
+
+
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">Что мы можем вам предложить?</h2>
+                <div class="offer__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis luctus elit. Curabitur volutpat dolor vitae sem eleifend ornare. Donec ultrices mattis placerat. Phasellus quis interdum enim. Praesent eget ex viverra, semper orci vitae, commodo nunc. Vestibulum a porttitor odio, a sollicitudin nisi.                 </div>
+            </div>
+           
+        </div>
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Быстро и полезно</h2>
+                <div class="offer__advantages-text">
+                    Nullam a dui ac felis fringilla molestie a ac lacus. Integer gravida tortor at faucibus feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pharetra rutrum imperdiet. Fusce mattis augue eget quam lobortis convallis                </div>
+                <h2>Правильный рацион</h2>
+                <div class="offer__advantages-text">
+                    Quisque est magna, posuere ac nibh id, suscipit bibendum nulla. In ut hendrerit metus, at laoreet dui. Quisque egestas mi id nisi aliquet euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget commodo sapien.
+                </div>
+            </div>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="icons/right.svg" alt="next">
+                    </div>
+                </div>
+                <div class="offer__slider-wrapper">
+                   <div class="offer__slider-inner">
+                        <div class="offer__slide">
+                            <img src="img/slider/giphy.gif" alt="pepper">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/janbb.gif" alt="food">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/pol.gif" alt="oil">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/rabit.gif" alt="paprika">
+                       
+                        </div>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
+  
+    <script src="js/bundle.js"></script>
+ 
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">Мы в социальных сетях:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <!-- <img src="icons/veg.svg" alt="pepper"> -->
+            </div>
+            <div class="call">
+                <div class="subtitle">Или позвоните нам</div>
+                <a href="#" class="link">+75552926600</a>
+                <a href="#" class="link">+312926600</a>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
